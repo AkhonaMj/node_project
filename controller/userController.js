@@ -7,7 +7,7 @@ const getUserById = async(req, res) =>{
     res.send(await getUserByIdDB(req.params.id))
 
 }
-
+// comment
 export{
     getUsers,
     getUserById
