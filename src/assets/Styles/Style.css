@@ -255,6 +255,40 @@ opacity:1
   outline:1px solid white;
 
 }
+/* Bottom Content Styling */
+
+.BottomCon {
+
+    display:flex;
+    flex-direction:column;
+   justify-content: center;
+}
+.BottomCon p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    text-align: center;
+    margin-top:10px;
+
+
+}
+#QuestionBtn {
+
+    color:white !important;
+    padding:3px;
+    border:1px solid white;
+    margin-bottom:10px;
+    width:30%;
+    margin:auto;
+
+    &:hover {
+
+        text-decoration: underline;
+
+    }
+
+}
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {

@@ -148,6 +148,14 @@
       </div>
 
 </div>
+<div class="BottomCon">
+    <h2 class="display-5 mt-4">Got Any Questions?</h2>
+    <button type="button" id="QuestionBtn">Contact Us</button>
+    <p>24/7 Service Guaranteed</p>
+
+
+
+</div>
         </div>
     
 </template>
