@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
 <NavBarComp/>
-<HomePageView/>
+<!-- <HomePageView/> -->
 <main class="container-fluid">
   <router-view/>
 </main>
@@ -9,12 +9,11 @@
 </template>
 <script>
 import NavBarComp from "@/components/NavBarComp.vue";
-import HomePageView from "@/views/HomePageView.vue";
+
 export default {
 components: {
 
-  NavBarComp,
-  HomePageView
+  NavBarComp
 }
 
 }
