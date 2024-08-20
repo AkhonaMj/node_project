@@ -1,7 +1,7 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Italianno&family=VT323&display=swap');
+
 /* All Elements */
 *,
 *::before,
@@ -87,6 +87,50 @@ background-color:orange;
 
 
 }
+/* Top Content Styling */
+
+h2 {
+
+color:white !important;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 700 !important;
+font-style: normal;
+}
+h5 {
+
+    color:white !important;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+.TopBoxBG {
+    width:25rem;
+    margin:auto;
+
+}
+.TopBoxBG img {
+    width:24.3rem;
+    height:23rem;
+    margin-top:0.4rem;
+  
+  box-shadow:2px 2px 5px white;
+  outline:2px solid white;
+  }
+  .TopBoxBG p {
+    width:90%;
+    margin:auto;
+    text-align: justify;
+    color:white;
+    text-justify: inter-word;
+    margin-top:0.9rem;
+    word-wrap: break-word;
+    padding:12px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
@@ -123,8 +167,42 @@ background-color:orange;
 
 right:120px;
     }
+    /* Top Content Media queries */
 
-}
+    .TopCon :is(h1, h2, h3, h4) {
+
+        margin-top:70px;
+
+
+    }
+    #contentrow {
+
+        flex-direction:column;
+
+    }
+
+    .TopBoxBG {
+        display:flex;
+       align-items:center;
+       width:90%;
+       flex-direction:column;
+       font-size:0.4rem;
+    }
+    
+    .TopBoxBG img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    }
+    .TopBoxBG p {
+       font-size:17px;
+        text-justify: inter-word;
+        margin-top:0.9rem;
+        word-wrap: break-word;
+    }
+      
+    }
+
 
 .container-fluid {
 
