@@ -116,7 +116,7 @@ h5 {
     margin-top:0.4rem;
   
   box-shadow:2px 2px 5px white;
-  outline:2px solid white;
+  outline:1px solid white;
   }
   .TopBoxBG p {
     width:90%;
@@ -130,6 +130,46 @@ h5 {
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+
+  /* Mid Content Styling */
+
+  .MidContent {
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .TextContent {
+
+    width:50%;
+
+  }
+  .TextContent p {
+    color:white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  text-align:center;
+
+  }
+  .ImageContent {
+
+    width:44%;
+
+
+  }
+  .ImageContent img {
+    object-fit:cover;
+    object-position:center;
+    width:40.625rem;
+    height:25rem;
+    position:relative;
+    box-shadow:2px 2px 5px white;
+  outline:1px solid white;
+
+
   }
 /* Media Queries */
 
@@ -200,7 +240,45 @@ right:120px;
         margin-top:0.9rem;
         word-wrap: break-word;
     }
-      
+      /* Mid Media Queries */
+      .MidContent {
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .TextContent {
+    
+        width:100%;
+    
+      }
+      .TextContent p {
+        color:white;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: justify;
+        color:white;
+        text-justify: inter-word;
+        margin-top:0.9rem;
+        word-wrap: break-word;
+    
+      }
+      .ImageContent {
+    
+        width:100%;
+    
+    
+      }
+      .ImageContent img {
+        width:100%;
+        
+        position:relative;
+        box-shadow:2px 2px 5px white;
+      outline:1px solid white;
+    
+    
+      }
     }
 
 

@@ -9,7 +9,7 @@
         <img src="https://richtershotline.github.io/Pimages/Images/LandingImage.jpg" class="LandingPhoto" alt="LandingPhoto" loading="lazy">
     </div>
    <div class="TopCon">
-    <h2 class="display-3">The Clothes Make The Man</h2>
+    <h2 class="display-5">The Clothes Make The Man</h2>
     <h5 class="display-7">You're a VIP. Dress like it</h5>
     <div class="row" id="contentrow">
         <div class="col" >
@@ -25,6 +25,24 @@
         </div>
         
       </div>
+</div>
+<div class="MidCon">
+    <h2 class="display-5">The Best Deserves The Best</h2>
+    <div class="MidContent">
+    <div class="TextContent">
+<p>You’re #1. Why not dress like it? You’re worth more than you know and you need clothes to show it.
+
+    Browse our catalogue and we’re sure you’ll find the right fit for you. From shirts to jackets to slacks to blazers. We have everything you need to look your absolute best. Be the center of attention wherever you go. From weddings to business parties. We'll get you fitted. No sweat.</p>
+        
+    </div>
+<div class="ImageContent">
+    <img src="https://richtershotline.github.io/Pimages/Images/Window.jpg" loading="lazy">
+</div>
+
+    </div>
+
+
+    
 </div>
         </div>
     
