@@ -1,6 +1,7 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Italianno&family=VT323&display=swap');
 /* All Elements */
 *,
 *::before,
@@ -35,9 +36,94 @@ background-color:black !important;
 
 }
 
-a {
+/* Landing Page Styling */
 
-    text-decoration:none;
+.LandingPage {
+
+    display:flex;
+    justify-content: end;
+    
+}
+.LandingPage :is(h1, h2, h3,h4) {
+    position:relative;
+    left:48px;
+    z-index:9999;
+text-align:center;
+color:white;
+margin-left:90px;
+display:block;
+font-family: "Cormorant Garamond", serif;
+font-weight: 500;
+font-style: normal;
+
+}
+.Headline {
+
+background-color:orange;
+
+}
+#HeadBtn {
+
+    color:white;
+    padding:10px;
+    border:1px solid white;
+    position:relative;
+    left:220px;
+    margin-top:20px;
+    z-index:9999;
+&:hover {
+
+    text-decoration: underline;
+
+}
+
+} 
+.LandingPhoto {
+ object-fit:cover;
+    object-position:center;
+    width:40.625rem;
+    height:50rem;
+    position:relative;
+
+
+}
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+    .LandingPage {
+       width:50%;
+        display:flex;
+        justify-content: center;
+       background-color:orange !important;
+
+    }
+    .LandingPhoto {
+       display:none;
+       
+       
+       }  
+       #HeadBtn {
+        color:white;
+        padding:10px;
+        border:1px solid white;
+        
+        left:147px;
+        margin-top:20px;
+    &:hover {
+    
+        text-decoration: underline;
+    
+    }
+        
+
+    
+    }  
+    .LandingPage :is(h1, h2, h3,h4) {
+
+right:120px;
+    }
+
 }
 
 .container-fluid {
