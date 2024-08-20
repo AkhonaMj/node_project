@@ -40,10 +40,27 @@
 </div>
 
     </div>
-
-
-    
 </div>
+<div class="BelowMidCon">
+    <h2 class="display-5">Our Offers To You</h2>
+    <div class="row" id="contentrow">
+        <div class="col" >
+          <div class="TopBoxBG"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><p>Need a custom suit? Contact us for a fitting and a quote free of charge. We measure all sizes. both men and women.</p></div>
+        </div>
+        <div class="col">
+          <div class="TopBoxBG"><img src="https://richtershotline.github.io/Pimages/Images/SuitShopping.jpg" loading="lazy"><p>Be the center of attention with our rental suits perfect for one-offs. Rent for as long as you want, whenever you want.</p></div>
+  
+        </div>
+        <div class="col">
+          <div class="TopBoxBG"><img src="https://richtershotline.github.io/Pimages/Images/Suits.jpg" loading="lazy"><p>See a suit you like but you don’t like the colour? We’ll change it for you. Our team of professional artisans can resize, recolour and redesign any outfit you want.</p></div>
+  
+        </div>
+        
+      </div>
+
+
+</div>
+
         </div>
     
 </template>
