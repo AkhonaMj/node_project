@@ -27,7 +27,7 @@
       </div>
 </div>
 <div class="MidCon">
-    <h2 class="display-5">The Best Deserves The Best</h2>
+    <h2 class="display-5 mt-4 mb-3">The Best Deserves The Best</h2>
     <div class="MidContent">
     <div class="TextContent">
 <p>You’re #1. Why not dress like it? You’re worth more than you know and you need clothes to show it.
@@ -42,7 +42,7 @@
     </div>
 </div>
 <div class="BelowMidCon">
-    <h2 class="display-5">Our Offers To You</h2>
+    <h2 class="display-5 mt-4">Our Offers To You</h2>
     <div class="row" id="contentrow">
         <div class="col" >
           <div class="TopBoxBG"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><p>Need a custom suit? Contact us for a fitting and a quote free of charge. We measure all sizes. both men and women.</p></div>
@@ -61,7 +61,7 @@
 
 </div>
 <div class="NearBottomCon">
-    <h2 class="display-5">Shop Our Collections</h2>
+    <h2 class="display-5 mt-4">Shop Our Collections</h2>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             
@@ -71,19 +71,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://richtershotline.github.io/Pimages/Images/Jacket.jpg" class="d-block w-50 RoImg mx-auto" alt="...">
+            <img src="https://richtershotline.github.io/Pimages/Images/Jacket.jpg" class="d-block w-50 RoImg mx-auto mb-2" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>The Richter Collection</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://richtershotline.github.io/Pimages/Images/SuitLady.jpg" class="d-block RoImg w-50 mx-auto" alt="...">
+            <img src="https://richtershotline.github.io/Pimages/Images/SuitLady.jpg" class="d-block RoImg w-50 mx-auto mb-2" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>The Miami Summer Collection</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://richtershotline.github.io/Pimages/Images/Mag.jpg" class="d-block RoImg w-50 mx-auto" alt="...">
+            <img src="https://richtershotline.github.io/Pimages/Images/Mag.jpg" class="d-block RoImg w-50 mx-auto mb-2" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>The Presidential Collection</h5>
             </div>
@@ -102,7 +102,52 @@
 
 
 </div>
+<div class="HomeProductsCon">
+    <h2 class="display-5 mt-4">What's Popular</h2>
+    <div class="row g-0" id="contentrow">
+        <div class="col" >
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><h5>Product Name</h5>
+        <h5>Amount</h5>
+        <button type="button" id="ProBtn">View More</button>
+        </div>
+        </div>
+        <div class="col">
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/SuitShopping.jpg" loading="lazy"><h5>Product Name</h5>
+            <h5>Amount</h5></div>
+            <button type="button" id="ProBtn">View More</button>
 
+        </div>
+        <div class="col">
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Suits.jpg" loading="lazy"><h5>Product Name</h5>
+            <h5>Amount</h5></div>
+            <button type="button" id="ProBtn">View More</button>
+
+        </div>
+        
+      </div>
+      <div class="row g-0" id="contentrow">
+        <div class="col" >
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><h5>Product Name</h5>
+            <h5>Amount</h5></div>
+            <button type="button" id="ProBtn">View More</button>
+
+        </div>
+        <div class="col">
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/SuitShopping.jpg" loading="lazy"><h5>Product Name</h5>
+            <h5>Amount</h5></div>
+            <button type="button" id="ProBtn">View More</button>
+
+        </div>
+        <div class="col">
+          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Suits.jpg" loading="lazy"><h5>Product Name</h5>
+            <h5>Amount</h5></div>
+            <button type="button" id="ProBtn">View More</button>
+
+        </div>
+        
+      </div>
+
+</div>
         </div>
     
 </template>
