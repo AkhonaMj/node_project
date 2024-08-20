@@ -5,4 +5,8 @@ const getProductsDB = async () =>{
     return results
 }
 
-export {getProductsDB}
+const getProductByIDDB = async (prodID) => {
+    let [results] = await pool.query("SELECT * FROM bntypjaquqwm92oofyxl.products WHERE prodID =?", [prodID])
+    return results
+}
+export {getProductsDB, getProductByIDDB}
