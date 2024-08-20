@@ -172,6 +172,45 @@ h5 {
 
 
   }
+  /* Near Bottom Content */
+.RoLabel {
+
+
+
+
+}
+.RoHead {
+
+
+}
+.caroImg {
+
+    width:90%;
+    height:20px;
+
+}
+
+.RoImg {
+    box-shadow:2px 2px 5px white;
+  outline:1px solid white;
+  margin-top:10px;
+
+}
+.carousel-caption {
+padding:20px;
+opacity:0.8;
+
+}
+.carousel-caption h5 {
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: 700;
+    font-style: normal;
+opacity:1
+}
+.carousel-indicators {
+    opacity:0.0;
+    }
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
