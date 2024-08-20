@@ -1,26 +1,27 @@
 <template>
 <div class="wrapper">
-
-<NavBar/>
+<NavBarComp/>
+<HomePageView/>
 <main class="container-fluid">
   <router-view/>
 </main>
 </div>
 </template>
 <script>
-import NavBar from "@/components/NavBarComp.vue"
+import NavBarComp from "@/components/NavBarComp.vue";
+import HomePageView from "@/views/HomePageView.vue";
 export default {
 components: {
 
-  NavBar
-
+  NavBarComp,
+  HomePageView
 }
 
 }
 
 </script>
 
-<style>
 
+<style src="./assets/Styles/Style.css">
 
 </style>
