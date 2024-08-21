@@ -461,6 +461,41 @@ justify-content: center;
    margin-top:20px;
    text-align:center;
    }
+   /* Product Page Styling */
+   #Searcher {
+    width:50%;
+    margin:auto;
+    background-color:#1b0e1e;
+    outline:2px solid white;
+    text-transform:uppercase;
+
+   }
+   .SortButtons {
+
+    display:flex;
+    justify-content: space-between;
+
+   }
+   #SortBtn {
+   width:25%;
+   border:1px solid white;
+   color:white;
+   
+
+   }
+   .Products {
+
+    display:flex;
+
+   }
+   .ProductStyle {
+    background-color:orange;
+    width:400px;
+    height:320px;
+    margin-left:10px;
+
+
+   }
 
 /* Media Queries */
 

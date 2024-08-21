@@ -107,7 +107,7 @@
         <div class="BtnCenter">
         <button id="VipBtn" type="submit" class="mb-5">Send Your Message</button>
 
-        <button id="VipBtn" type="Button" onclick="Clear()" class="mb-5">Clear</button>
+        <button id="VipBtn" type="button" onclick="Clear()" class="mb-5">Clear</button>
         </div>
         
         
