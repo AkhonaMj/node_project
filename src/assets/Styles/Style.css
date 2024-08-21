@@ -70,7 +70,7 @@ background-color:black !important;
   
   .LandingPhoto {
     width: 40.625rem;
-    height: 50rem;
+    height: 58rem;
     overflow: hidden; 
   }
   
@@ -321,7 +321,7 @@ opacity:1
   font-size:7.5rem;
   margin-top:-30px;
   margin-left:30px;
-  letter-spacing:2.1rem;
+  letter-spacing:1.9rem;
 
   }
   #OwnerImg {
@@ -624,6 +624,49 @@ right:120px;
       outline:1px solid white;
 
       }
+      /* About Us Queries */
+
+.Legacy {
+
+    display:flex;
+    flex-direction:column;
+
+}
+.LegacyContent {
+
+display:block;
+
+}
+.Legacy h2 {
+    
+    text-align:center;
+
+}
+
+.Legacy p {
+    width:100%;
+   text-align:center;
+    
+
+}
+
+      .AboutLogo {
+        font-size:70px;
+        letter-spacing:normal;
+        text-align:initial;
+        margin-top:10px;
+
+      }
+      #OwnerImg {
+        width:17rem;
+       height:17rem;
+
+      }
+      .OwnerText {
+
+        width:100%;
+
+      }
       /* Contact Us Queries */
       .ContactBG {
         word-wrap:break-word;
@@ -860,12 +903,4 @@ font-size:12px;
     }
 
 
-.container-fluid {
 
-
-
-}
-h1 {
-
-
-}

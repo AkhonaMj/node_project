@@ -1,32 +1,52 @@
 <template>
-  <div class="container-fluid">
-<h2>Browse Our Selection</h2>
-<p class="UnderText">Browse our unique and vast catalogue find your perfect
-    fit.</p>
-    <div class="row text-center">
-        <div class="col">
-            <h2>Search via name</h2>
-            <input type="text" class="mt-2" id="Searcher">
-          </div>
+    <div class="container-fluid text-center Monials ">
+        <div class="row align-items-center g-0 MonialRow mx-auto" v-if="fetchProducts">
+          <CardComp  v-for="product in fetchProducts" :key="product.prodID" >
+                
+                <template #cardHeader>
+            
+                    <img :src="product.ProdURL" class="card-img-top img-fluid" alt="product" loading="lazy">
+                  
+                  </template>
+                 <template #cardBody>
+                  <div class="hovering">
+                 <h3 class="name">{{product.prodName}} </h3>
+                 <p>{{product.amount}} </p>
+                 <p class="quota">"{{product.Category}}"</p>
+                  </div>
+                </template>
+         
+        </CardComp>
+    
         </div>
-        <div class="SortButtons mt-4">
-      <button type="text" id="SortBtn">Sort By Highest</button>
-      <button type="text" id="SortBtn">Sort By Category</button>
-
-        </div>
-        <div class="Products mt-3">
-     <img src="https://richtershotline.github.io/Pimages/Images/HotlineMiami2_Cover.webp" class="ProductStyle">
-     <img src="https://richtershotline.github.io/Pimages/Images/HotlineMiami2_Cover.webp" class="ProductStyle">
-     <img src="https://richtershotline.github.io/Pimages/Images/HotlineMiami2_Cover.webp" class="ProductStyle">
-     <img src="https://richtershotline.github.io/Pimages/Images/HotlineMiami2_Cover.webp" class="ProductStyle">
-
-
-        </div>
-  </div>
+        <LoadingSpinner v-else>
+          
+        </LoadingSpinner>
+      </div>
 </template>
 
 <script>
+import CardComp from "@/components/CardComp.vue"
+import LoadingSpinner from "@/components/LoadingSpinner.vue"
 export default {
+components: {
+
+    CardComp,
+    LoadingSpinner
+
+
+},
+computed: {
+    fetchProducts() {
+    return this.$store.state.products
+    }
+
+},
+mounted() {
+
+    this.$store.dispatch("fetchProducts")
+
+}
 
 }
 </script>
