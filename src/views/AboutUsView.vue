@@ -1,12 +1,14 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-        <h2 class="display-2">About</h2>
+    <div class="container-fluid">
+      <div class="Legacy">
+      <h2>Our Legacy</h2>
+      <div class="TextContainer">
+      </div>
+      </div>
+  
+      
     </div>
-    
-  </div>
-</template>
-
+  </template>
 <script>
 export default {
 
