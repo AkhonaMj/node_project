@@ -23,7 +23,7 @@
                     <router-link class="nav-link" to="/contact">Reach Us |</router-link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" to="HTMLFolder/contact.html">Products |</a>
+                    <router-link class="nav-link" to="/products">Products |</router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" to="HTMLFolder/checkout.html">Admin |</router-link>
