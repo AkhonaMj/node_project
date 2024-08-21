@@ -360,6 +360,108 @@ flex-direction:column;
      color:white;
 
 }
+/* Contact Us Styling */
+.LocationContent {
+display:flex;
+flex-direction:column;
+
+}
+.Contact h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align:left;
+   letter-spacing:.2rem;
+   color:white;
+
+}
+.UnderText {
+
+    text-align:center;
+    color:white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ContactUsText {
+
+    margin:auto;
+    width:50%;
+
+}
+textarea {
+
+    resize:none;
+
+}
+.ContactBG {
+opacity:0.9;
+    background-color:black;
+    padding:0.2rem;
+    margin:auto;
+
+}
+.ContactBG h3 {
+
+    text-decoration:underline;
+
+}
+#ContactForm {
+
+    width:100%;
+    margin:auto;
+    outline:1px solid white;
+    
+
+}
+input[type=text] {
+
+    color:white;
+
+}
+input[type=email] {
+
+    color:white;
+
+}
+
+input[type=number] {
+
+    color:white;
+
+}
+
+
+select {
+
+    color:white;
+
+}
+textarea {
+  resize:none !important;
+    color:white;
+}
+
+.BtnCenter {
+display:flex;
+flex-direction: column;
+margin-top:0.1rem;
+justify-content: center;
+
+}
+#VipBtn {
+
+    width:25%;
+    height:25%;
+    border-radius:7px;
+   margin:auto;
+   padding:2px;
+   border:1px solid white;
+   color:white;
+   margin-top:20px;
+   text-align:center;
+   }
+
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
@@ -487,6 +589,239 @@ right:120px;
       outline:1px solid white;
 
       }
+      /* Contact Us Queries */
+      .ContactBG {
+        word-wrap:break-word;
+         background-color: #120914;
+         box-shadow:5px 5px 10px fuchsia;
+         margin-top:10px;
+     }
+     .Contact {
+       width:50%;
+       margin:auto;
+
+
+     }
+     
+     #ProductBtn2 {
+         margin-top:0.8rem;
+         width:100%;
+         border-radius:7px;
+        background-color:blueviolet;
+        box-shadow:3px 3px 10px fuchsia;
+        border:none;
+        color:white;
+        text-align:center;
+
+
+     }
+
+   
+
+     input[productadd] {
+         
+         width:100%;
+         margin:auto;
+         background-color:#1b0e1e;
+         box-shadow:3px 3px 5px fuchsia;
+         outline:2px solid fuchsia;
+         margin-top:5px;
+     
+     }
+     #ProductBtnAlph {
+         margin-top:0.8rem;
+         width:100%;
+         border-radius:7px;
+        background-color:blueviolet;
+        box-shadow:3px 3px 10px fuchsia;
+        border:none;
+        color:white;
+        text-align:center;
+
+     }
+     #ProductBtnTicket {
+         margin-top:0.8rem;
+         width:100%;
+         border-radius:7px;
+        background-color:blueviolet;
+        box-shadow:3px 3px 10px fuchsia;
+        border:none;
+        color:white;
+        text-align:center;
+     
+     }
+     #Deleter {
+
+         width:12%;
+         font-size:10px;
+        background-color:blueviolet;
+        box-shadow:3px 3px 10px fuchsia;
+        border:none;
+        color:white;
+        text-align:center;
+       
+     }
+
+     #ProductBtnSub {
+         margin-top:0.8rem;
+         width:100%;
+         border-radius:7px;
+        background-color:blueviolet;
+        box-shadow:3px 3px 10px fuchsia;
+        border:none;
+        color:white;
+        text-align:center;
+     }
+     .Mobile {
+
+         display:flex;
+         flex-direction:column;
+         width:100%;
+
+     }
+     .col-res {
+
+         margin-top:20px;
+
+     }
+     .BtnCenter {
+         display:flex;
+         margin-top:0.1rem;
+         justify-content: center;
+         flex-direction:column;
+         }
+     .BGImg2 { 
+
+         background-image:url("https://richtershotline.github.io/Pimages/Images/Payphone2.jpg");
+         /* background-size: 100% auto;
+         background-repeat: no-repeat; */
+     background-size:center;
+     background-position:center center;
+     background-attachment:local;
+     padding:2rem;
+     }
+#ContactForm {
+    position:relative;
+    right:50px;
+    width:170px;
+    display:block;
+outline:none;
+box-shadow:none;
+}
+::placeholder {
+
+ font-size:0.1px;
+}
+.ForMobile {
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.ForMobile h3 {
+
+font-size:12px;
+}
+     .ContactBG p {
+       font-size:9px;
+      
+      }
+      .ContactBG h3, h4 {
+         font-size:9px;
+        
+        }
+     #AboutImg {
+         width:50%;
+         height:auto;
+         margin-left:0.4rem;
+     }
+     #TeamText {
+
+         width:50%;
+         font-size:9px;
+         margin-left:9px;  
+            
+        }
+     .BodConBG {
+         display:flex;
+        align-items:center;
+        width:90%;
+        flex-direction:column;
+        font-size:0.4rem;
+     }
+     
+     .BodConBG img {
+     width:100%;
+     height:100%;
+     object-fit: cover;
+     
+     
+       
+     }
+     #AboutText {
+         width:100%;
+             height:auto;
+         margin:auto;
+         }
+     footer {
+
+
+         bottom: 0;    
+         background-color:black;
+         opacity:0.7;
+     height:auto;
+     width: 100%;
+     position: fixed;
+     left: 0;
+     text-align:center;
+     
+     
+     
+     }
+     #VipBtn {
+         width:100%;
+         height:30%;
+         border-radius:7px;
+        margin:auto;
+    
+        border:1px solid white;
+        color:white;
+        margin-top:9px;
+        text-align:center;
+       
+       }
+     
+     .BodCon p {
+     
+     text-align:center;
+     
+     }
+
+     .BodConBG2 {
+         display:flex;
+         margin:auto;
+      flex-direction:column;
+         
+      }
+      .BodConBG2 img {
+          width:100%;
+          height:auto;
+          margin-top:0.4rem;
+        
+        box-shadow:5px 5px 10px fuchsia;
+        outline:2px solid fuchsia;
+        }
+        .BodConBG2 p {
+          width:100%;
+          margin:auto;
+          text-align: justify;
+          text-justify: inter-word;
+          margin-top:0.9rem;
+          word-wrap: break-word;
+          padding:12px;
+        
+        }
+
+
     }
 
 
