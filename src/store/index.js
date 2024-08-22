@@ -32,7 +32,7 @@ export default createStore({
   actions: {
     async fetchProducts(context) {
       try {
-        const { results } = await (await axios.get(`${apiURL}products`)).data
+        const results = await (await axios.get(`${apiURL}products`)).data
         if (results) {
           context.commit('setProducts', results)
         } else {
