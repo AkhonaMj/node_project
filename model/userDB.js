@@ -57,4 +57,17 @@ const deleteUserDB = async (id) => {
     }
 }
 
-export { getUsersDB, getUserByIdDB, updateUserDB, deleteUserDB, registerUserDB }
+const getUserByEmailDB = async (emailAdd) => {
+    try {
+        let [[{userPass}]] = await pool.query("SELECT * FROM bntypjaquqwm92oofyxl.users WHERE emailAdd=?", [emailAdd]);
+        if (userPass.length === 0) {
+            throw { status: 404, message: "User Not Found" };
+        }
+        return userPass;
+    } catch (error) {
+        console.error("Error retrieving user by Email:", error);
+        throw error.status ? error : { status: 500, message: "Internal Server Error" };
+    }
+}
+
+export { getUsersDB, getUserByIdDB, updateUserDB, deleteUserDB, registerUserDB, getUserByEmailDB}

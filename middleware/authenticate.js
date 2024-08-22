@@ -1,16 +1,19 @@
 import {compare} from "bcrypt"
-import { getUserByIdDB } from "../model/userDB.js"
+import { getUserByEmailDB } from "../model/userDB.js"
 import jwt from "jsonwebtoken" 
 import {config} from "dotenv"
 config()
 
 const checkUser = async (req, res, next) => {
-    const {userProfile, password} = req.body
-    let hashedPassword = (await getUserByIdDB(userProfile))
+    const {emailAdd, userPass} = req.body //destructuring
+    console.log(emailAdd, userPass);
+    
+    let hashedPassword = (await getUserByEmailDB(emailAdd))
+console.log(hashedPassword);
 
-    compare(password, hashedPassword, (err, result)=>{
+    compare(userPass, hashedPassword, (err, result)=>{
         if(result==true){
-            let token = jwt.sign({userProfile:userProfile},process.env.SECRET_KEY,{expiresIn: "1h"})
+            let token = jwt.sign({emailAdd:emailAdd},process.env.SECRET_KEY,{expiresIn: "1h"})
             console.log(token)
             req.body.token = token
 
