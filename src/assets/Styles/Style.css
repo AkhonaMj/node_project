@@ -639,6 +639,23 @@ justify-content: center;
      }
     
    }
+   /* Footer Styling */
+   .footerstyle {
+
+    
+    bottom: 0;    
+
+height:auto;
+width: 100%;
+left: 0;
+opacity:0.7;
+text-align:center;
+color:white !important;
+font-family: "Italianno", cursive;
+font-weight: 400;
+font-style: normal;
+
+   }
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
