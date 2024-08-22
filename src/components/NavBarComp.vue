@@ -1,6 +1,8 @@
 <template>
     <div class="Logo">
-        <h1>Valentine's</h1>
+      <router-link to="/">
+        <h1 class="TextDecoRemover">Valentine's</h1>
+      </router-link>
     </div>
     <div class="BGImg container-fluid NavBar" loading="lazy">
         <nav class="navbar navbar-expand-lg">
@@ -17,7 +19,7 @@
                     <router-link class="nav-link active" aria-current="page" to="/">Home |</router-link>
                   </li>
                   <li class="nav-item">
-                    <router-link class="nav-link" to="/about">About |</router-link>
+                    <router-link class="nav-link active" to="/about">About |</router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" to="/contact">Reach Us |</router-link>
