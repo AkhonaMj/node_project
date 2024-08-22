@@ -572,7 +572,7 @@ justify-content: center;
     margin: auto;
     width: 100%;
     display: flex;
-    justify-content:center; /* Distribute items evenly */
+    justify-content:center; 
     flex-wrap: wrap;
 }
 .cleartxt {
@@ -580,7 +580,6 @@ justify-content: center;
   color:white !important;
 
 }
-/* Each product should take up 25% of the available space */
 .Products .hovering {
     flex-basis: 25%;
 }
@@ -626,8 +625,20 @@ justify-content: center;
     
 
    }
-   
-
+   #SortBtnPrice {
+    width:25%;
+    border:1px solid white;
+    color:white;
+    transition: background-color 2s 100ms;
+     &:hover {
+       text-decoration: underline;
+       color:white !important;
+       opacity:1;
+       background: hsl(0, 0%, 11%) !important;
+     
+     }
+    
+   }
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
