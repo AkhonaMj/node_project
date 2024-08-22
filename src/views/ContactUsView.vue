@@ -106,8 +106,8 @@
         </div>
         <div class="BtnCenter">
         <button id="VipBtn" type="submit" class="mb-5">Send Your Message</button>
-
-        <button id="VipBtn" type="button" onclick="Clear()" class="mb-5">Clear</button>
+        <button id="VipBtn" type="button" @click="Clear()" class="mb-5">Clear</button>
+        <span id="cleartxt"></span>
         </div>
         
         
@@ -124,8 +124,23 @@
 
 <script>
 export default {
+components: {
+
+  
+
+},
+methods: { 
+  Clear() {
+
+let UserEntries = document.getElementById("UserForm")
+UserEntries.reset()
+document.getElementById("cleartxt").innerHTML = "Your inputs have been cleared."
+
+  }
 
 }
+}
+
 </script>
 
 <style>

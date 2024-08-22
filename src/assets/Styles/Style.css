@@ -543,6 +543,11 @@ justify-content: center;
     text-transform:uppercase;
 
    }
+   .SortBtnPrice {
+
+    color:white !important;
+
+   }
    .SortButtons {
 
     display:flex;
@@ -553,14 +558,32 @@ justify-content: center;
    width:25%;
    border:1px solid white;
    color:white;
-   
+   transition: background-color 2s 100ms;
+    &:hover {
+      text-decoration: underline;
+      color:white !important;
+      opacity:1;
+      background: hsl(0, 0%, 11%) !important;
+    
+    }
 
    }
    .Products {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content:center; /* Distribute items evenly */
+    flex-wrap: wrap;
+}
+.cleartxt {
 
-    display:flex;
+  color:white !important;
 
-   }
+}
+/* Each product should take up 25% of the available space */
+.Products .hovering {
+    flex-basis: 25%;
+}
    .ProductStyle {
     background-color:orange;
     width:400px;
@@ -569,6 +592,41 @@ justify-content: center;
 
 
    }
+   .hovering {
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+   }
+   .Products p {
+
+    color:white !important;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  text-align:center;
+
+   }
+   .Products h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align:left;
+   letter-spacing:.2rem;
+   color:white;
+   text-align:center;
+   
+   }
+   .ViewBtn {
+
+    color:white !important;
+    margin:auto;
+    text-align:center;
+    
+
+   }
+   
 
 /* Media Queries */
 
