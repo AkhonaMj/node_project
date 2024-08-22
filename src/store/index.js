@@ -50,14 +50,14 @@ console.log("error")
   
     async fetchProduct(context, id) {
       try {
-        const { result, msg } = await (await axios.get(`${apiURL}product/${id}`)).data
+        const result = await (await axios.get(`${apiURL}products/${id}`)).data
         if (result) {
-          context.commit('setProduct', result)
-        } else {
-          toast.error(`${msg}`, {
-            autoClose: 2000,
-            position: toast.POSITION.BOTTOM_CENTER
-          })
+          context.commit('setSingleProduct', result)
+        // } else {
+        //   toast.error(`${}`, {
+        //     autoClose: 2000,
+        //     position: toast.POSITION.BOTTOM_CENTER
+        //   })
         }
       } catch (e) {
         toast.error(`${e.message}`, {

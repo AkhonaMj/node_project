@@ -17,15 +17,16 @@
         <div class="Products mt-3 mx-auto" v-if="SearchedProducts">
             <CardComp v-for="product in SearchedProducts" :key="product.prodID">
                 <template #cardHeader>
-                    <img :src="product.ProdURL" class="card-img-top img-fluid" alt="product" loading="lazy">
+                    <img :src="product.prodUrl" class="card-img-top img-fluid" alt="product" loading="lazy">
                 </template>
                 <template #cardBody>
                     <div class="hovering">
                         <h3 class="ProductName">{{ product.prodName }}</h3>
                         <p class="ProductAmount">${{ product.amount }}</p>
                         <p class="Category">{{ product.Category }}</p>
-                        <button type="button"  class="ViewBtn">View More</button>
-                          
+                        <router-link :to="{ name: 'OnePro', params: { id: product.prodID } }">
+  <button type="button" class="ViewBtn">View More</button>
+</router-link>
                     </div>
                 </template>
             </CardComp>
@@ -49,7 +50,7 @@ components: {
 
     CardComp,
     LoadingSpinner
-
+   
 
 },
 
@@ -62,6 +63,7 @@ computed: {
 
 
    )
+
 },
 
 
@@ -151,6 +153,7 @@ async Search() {
 mounted() {
 
     this.$store.dispatch("fetchProducts")
+    console.log(this.products) 
 
 }
 
