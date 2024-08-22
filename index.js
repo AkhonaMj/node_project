@@ -5,7 +5,7 @@ import productRouter from "./routes/productRoute.js"
 
 let port = process.env.PORT || 2020
 const app = express()
-
+app.use(express.static('public'))
 app.use(express.json())
 app.use(cors({
     origin: '*',
@@ -20,9 +20,9 @@ app.use(cors({
     res.header("Access-Control-Expose-Headers", "Authorization");
     next();
   });
+  
 app.use("/users", userRouter)
 app.use("/products", productRouter )
-app.use(express.static("public"))
 
 
 
