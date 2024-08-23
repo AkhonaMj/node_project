@@ -14,6 +14,7 @@ background-color:black !important;
 
 /* Animations */
 
+
 @keyframes Fadein  {
 from {
 
@@ -360,11 +361,11 @@ opacity:1
 /* About Styling */
 
 .Legacy {
+  animation: 5s 1 alternate Fadein;
 
 }
 
 .LegacyContent {
-
     display:flex;
 
 }
@@ -514,7 +515,12 @@ textarea {
   resize:none !important;
     color:white;
 }
+.QuestionCon {
 
+  margin:auto;
+  width:200px;
+
+}
 .BtnCenter {
 display:flex;
 flex-direction: column;
@@ -654,6 +660,33 @@ color:white !important;
 font-family: "Italianno", cursive;
 font-weight: 400;
 font-style: normal;
+
+   }
+   /* Admin Page Styling */
+   td {
+
+    color:white !important;
+
+   }
+   th {
+
+    color:white !important;
+
+   }
+
+   .modal-title {
+    
+    color:white !important;
+    
+   }
+   .modal h4 {
+
+    color:white !important;
+
+   }
+   .modal {
+
+    color:white !important;
 
    }
 /* Media Queries */

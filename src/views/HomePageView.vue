@@ -104,57 +104,17 @@
 </div>
 <div class="HomeProductsCon">
     <h2 class="display-5 mt-4">What's Popular</h2>
-    <div class="row g-0" id="contentrow">
-        <div class="col" >
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><h5>Product Name</h5>
-        <h5>Amount</h5>
-        <button type="button" id="ProBtn">View More</button>
-        </div>
-        </div>
-        <div class="col">
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/SuitShopping.jpg" loading="lazy"><h5>Product Name</h5>
-            <h5>Amount</h5></div>
-            <button type="button" id="ProBtn">View More</button>
-
-        </div>
-        <div class="col">
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Suits.jpg" loading="lazy"><h5>Product Name</h5>
-            <h5>Amount</h5></div>
-            <button type="button" id="ProBtn">View More</button>
-
-        </div>
-        
-      </div>
-      <div class="row g-0" id="contentrow">
-        <div class="col" >
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Fitting.jpg" loading="lazy"><h5>Product Name</h5>
-            <h5>Amount</h5></div>
-            <button type="button" id="ProBtn">View More</button>
-
-        </div>
-        <div class="col">
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/SuitShopping.jpg" loading="lazy"><h5>Product Name</h5>
-            <h5>Amount</h5></div>
-            <button type="button" id="ProBtn">View More</button>
-
-        </div>
-        <div class="col">
-          <div class="Product"><img src="https://richtershotline.github.io/Pimages/Images/Suits.jpg" loading="lazy"><h5>Product Name</h5>
-            <h5>Amount</h5></div>
-            <button type="button" id="ProBtn">View More</button>
-
-        </div>
-        
-      </div>
+    
 
 </div>
 <div class="BottomCon">
     <h2 class="display-5 mt-4">Got Any Questions?</h2>
+    <div class="QuestionCon">
 <router-link to="/contact">
     <button type="button" id="QuestionBtn">Contact Us</button>
   </router-link>
     <p>24/7 Service Guaranteed</p>
-
+  </div>
 
 
 </div>
