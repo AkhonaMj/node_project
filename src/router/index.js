@@ -4,6 +4,7 @@ import AboutUsView from "../views/AboutUsView.vue"
 import ContactUsView from "../views/ContactUsView.vue"
 import ProductPageView from "../views/ProductPageView.vue"
 import SingleProductView from '../views/SingleProductView.vue'
+import AdminView from '@/views/AdminView.vue'
 const routes = [
   {
     path: '/',
@@ -45,7 +46,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: 
     SingleProductView
-  }
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: 
+    AdminView
+  },
 ]
 
 const router = createRouter({
