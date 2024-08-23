@@ -46,13 +46,13 @@ const updateProd = async (req, res) => {
 };
 
 const deleteProduct = async (req, res) => {
-  try {
-    res.status(200).json(await deleteProductDB(req.params.id))
-    res.send("Product deleted!");
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error deleting product");
-  }
-};
-
+    try {
+      const result = await deleteProductDB(req.params.id);
+      res.status(200).json(result);  
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Error deleting product"); 
+    }
+  };
+  
 export { getProducts, getProductByID, addProduct, updateProd, deleteProduct };
