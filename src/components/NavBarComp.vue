@@ -28,7 +28,7 @@
                     <router-link class="nav-link" to="/products">Products |</router-link>
                   </li>
                   <li class="nav-item">
-                    <router-link class="nav-link" to="HTMLFolder/checkout.html">Admin |</router-link>
+                    <router-link class="nav-link" to="/admin">Admin |</router-link>
                   </li>
                 </ul>
               </div>
