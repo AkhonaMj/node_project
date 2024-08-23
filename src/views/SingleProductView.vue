@@ -5,7 +5,7 @@
       </div>
       <div class="row justify-content-center" v-if="product">
         <h3>{{product.prodName}}</h3>
-        <CardComp>
+        <CardComp >
           <template #cardHeader>
             <img
               :src="product.prodUrl"

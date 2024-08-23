@@ -108,7 +108,7 @@ SortCategoryM() {
         console.log("Men clicked");
 
         // Filter products for men
-        const MenProducts = this.products.filter(unit => unit.Category.includes("men"));
+        const MenProducts = this.products.filter(unit => unit.Category.indexOf("women"));
         console.log("MenProducts:", MenProducts); // Log the filtered products
         this.$store.state.products = MenProducts; // Update the products array
 
