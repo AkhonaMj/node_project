@@ -111,12 +111,10 @@
 </div>
 <div class="BottomCon">
     <h2 class="display-5 mt-4">Got Any Questions?</h2>
-    <div class="QuestionCon">
-<router-link to="/contact">
-    <button type="button" id="QuestionBtn">Contact Us</button>
+<router-link id="QuestionBtn" to="/contact">
+  <h2>Contact Us</h2>
   </router-link>
     <p>24/7 Service Guaranteed</p>
-  </div>
 
 
 </div>

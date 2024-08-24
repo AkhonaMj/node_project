@@ -50,20 +50,21 @@ console.log("error")
   
     async fetchProduct(context, id) {
       try {
-        const result = await (await axios.get(`${apiURL}products/${id}`)).data
-        if (result) {
-          context.commit('setSingleProduct', result)
-        // } else {
-        //   toast.error(`${}`, {
-        //     autoClose: 2000,
-        //     position: toast.POSITION.BOTTOM_CENTER
-        //   })
+        const result = await axios.get(`${apiURL}products/${id}`);
+        if (result.data) {
+          console.log(result.data)
+          context.commit('setSingleProduct', result.data);
+        } else {
+          toast.error(`${result}`, {
+            autoClose: 2000,
+            position: toast.POSITION.BOTTOM_CENTER,
+          });
         }
       } catch (e) {
         toast.error(`${e.message}`, {
           autoClose: 2000,
-          position: toast.POSITION.BOTTOM_CENTER
-        })
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
       }
     },
     async addAProduct(context, payload) {

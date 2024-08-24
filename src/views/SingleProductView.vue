@@ -1,52 +1,43 @@
 <template>
-  <div class="container-fluid ">
-      <div class="row">
-          <h2 class="display-2">Product Details</h2>
-      </div>
-      <div class="row my-2" v-if="product()">
-          <div class="row center">
-                      <div class="card mt-5" style="width:18rem">
-                          <img :src="$store.state.product.prodURL" class="card-img-top">
-                          <div class="card-body">
-                              <div class="prodName">
-                                  <h5 class="card-title">{{$store.state.product.prodName}}</h5>
-                                  <h4>{{$store.state.product.category}}</h4>
-                              </div>
-                              <div>
-                                  <p class="card-text">Price: R{{$store.state.product.amount}}</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-      </div>
-      <div v-else>
-          <LoadingSpinner/>
-      </div>
-  </div>
-</template>
+    <div v-if="fetchProductData">
+      <div class="Products" v-for="product in product" :key="product.prodID" >
+        <div class="producters">
+            
+            <img :src="product.prodUrl" class="card-img-top img-fluid proImg" alt="product" loading="lazy">
+            <h3 class="ProductName">{{ product.prodName }}</h3>
+            <h3>{{ product.Category }}</h3>
+            <h3>${{ product.amount }}</h3>
 
-<script >
-import LoadingSpinner from '@/components/LoadingSpinner.vue';
-export default{
-  methods: {
-      getProduct(){
-          this.$store.dispatch('setSingleProduct',this.$route.params.id);
+        </div>
+
+      </div>
+    
+    </div>
+    <div v-else>
+        <LoadingSpinner/>
+      </div>
+  </template>
+  
+  <script>
+  import LoadingSpinner from "@/components/LoadingSpinner.vue"
+  export default {
+    components: {
+        LoadingSpinner
+
+    },
+    methods: {
+      fetchProductData() {
+        this.$store.dispatch('fetchProduct', this.$route.params.id);
       },
+    },
+    computed: {
       product() {
-          return this.$store.state.product;
+        return this.$store.state.product;
       },
-  },
-  mounted() {
-      this.getProduct();
-  },
-  components:{
-      LoadingSpinner
-  }
-}
-</script>
-<style scoped>
-  .center{
-      display: flex;
-      justify-content: center;
-  }
-</style>
+    },
+    mounted() {
+      this.fetchProductData();
+    },
+  };
+  </script>
+  

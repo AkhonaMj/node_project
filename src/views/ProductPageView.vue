@@ -17,7 +17,7 @@
         <div class="Products mt-3 mx-auto" v-if="SearchedProducts">
             <CardComp v-for="product in SearchedProducts" :key="product.prodID">
                 <template #cardHeader>
-                    <img :src="product.prodUrl" class="card-img-top img-fluid" alt="product" loading="lazy">
+                    <img :src="product.prodUrl" class="card-img-top img-fluid proImg" alt="product" loading="lazy">
                 </template>
                 <template #cardBody>
                     <div class="hovering">

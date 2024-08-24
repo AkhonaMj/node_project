@@ -81,7 +81,7 @@
                   </div>
                   <div class="row pt-4">
                     <div class="col">
-                <h2 class="text-center">Nature of Inquiry</h2> 
+                <h2 class="text-center">Category</h2> 
                 <div class="ContactUsText">
                 <select  name="Category" id="ContactForm">
                 <option value="Complaint">Complaint</option>
@@ -137,8 +137,14 @@ UserEntries.reset()
 alert("Your form has been cleared")
   },
   Validation() {
+    let Email = document.getElementsByName("Email")[0]
+
   let UserEntry = document.getElementById("ContactForm")
   console.log(UserEntry.value)
+  if (!Email.value.includes('@')) {
+     alert("You have entered an invalid Email Address")
+ } 
+
 switch(UserEntry.value) {
 
   case "":
