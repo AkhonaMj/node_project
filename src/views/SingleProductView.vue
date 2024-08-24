@@ -1,52 +1,52 @@
 <template>
-    <div class="container vh-100">
+  <div class="container-fluid ">
       <div class="row">
-        <h2 class="display-2">Product Details</h2>
+          <h2 class="display-2">Product Details</h2>
       </div>
-      <div class="row justify-content-center" v-if="product">
-        <h3>{{product.prodName}}</h3>
-        <CardComp >
-          <template #cardHeader>
-            <img
-              :src="product.prodUrl"
-              loading="lazy"
-              class="img-fluid"
-              :alt="product.prodName"
-            />
-          </template>
-          <template #cardBody>
-            <h5 class="card-title fw-bold">{{ product.prodName }}</h5>
-            <p class="lead">
-            </p>
-            <p class="lead">
-              <span class="text-tertiary fw-bold">Amount</span>: R{{
-                product.amount
-              }}
-            </p>
-          </template>
-        </CardComp>
+      <div class="row my-2" v-if="product()">
+          <div class="row center">
+                      <div class="card mt-5" style="width:18rem">
+                          <img :src="$store.state.product.prodURL" class="card-img-top">
+                          <div class="card-body">
+                              <div class="prodName">
+                                  <h5 class="card-title">{{$store.state.product.prodName}}</h5>
+                                  <h4>{{$store.state.product.category}}</h4>
+                              </div>
+                              <div>
+                                  <p class="card-text">Price: R{{$store.state.product.amount}}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
       </div>
       <div v-else>
-        <LoadingSpinner />
+          <LoadingSpinner/>
       </div>
-    </div>
-  </template>
-  
-  <script setup>
-  import { useStore } from "vuex";
-  import { computed, onMounted } from "vue";
-  import CardComp from "@/components/CardComp.vue";
-  import LoadingSpinner from "@/components/LoadingSpinner.vue";
-  import { useRoute } from "vue-router";
-  const store = useStore();
-  const route = useRoute();
-  const product = computed(() => store.state.product);
-  onMounted(() => {
-    store.dispatch("fetchProduct", route.params.id);
-  });
-  </script>
-  
-  <style scoped>
-  
- 
-  </style>
+  </div>
+</template>
+
+<script >
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
+export default{
+  methods: {
+      getProduct(){
+          this.$store.dispatch('setSingleProduct',this.$route.params.id);
+      },
+      product() {
+          return this.$store.state.product;
+      },
+  },
+  mounted() {
+      this.getProduct();
+  },
+  components:{
+      LoadingSpinner
+  }
+}
+</script>
+<style scoped>
+  .center{
+      display: flex;
+      justify-content: center;
+  }
+</style>

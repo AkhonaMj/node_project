@@ -4,7 +4,9 @@
             <div class="Headline">
             <h2 class="display-2">Personified</h2>
             <h1 class="display-1">Elegance</h1>
+            <router-link to="/products">
             <button type="button" id="HeadBtn">See Our Collection</button>
+          </router-link>
         </div>
         <img src="https://richtershotline.github.io/Pimages/Images/LandingImage.jpg" class="LandingPhoto" alt="LandingPhoto" loading="lazy">
     </div>

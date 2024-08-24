@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="BtnCenter">
-        <button id="VipBtn" type="submit" class="mb-5">Send Your Message</button>
+        <button id="VipBtn" type="submit" @click="Validation()" class="mb-5">Send Your Message</button>
         <button id="VipBtn" type="button" @click="Clear()" class="mb-5">Clear</button>
         <span id="cleartxt"></span>
         </div>
@@ -134,7 +134,22 @@ methods: {
 
 let UserEntries = document.getElementById("UserForm")
 UserEntries.reset()
-document.getElementById("cleartxt").innerHTML = "Your inputs have been cleared."
+alert("Your form has been cleared")
+  },
+  Validation() {
+  let UserEntry = document.getElementById("ContactForm")
+  console.log(UserEntry.value)
+switch(UserEntry.value) {
+
+  case "":
+    alert("Please enter your details")
+break;
+case 70: 
+alert("Please enter values that are less than 70 characters")
+break;
+case "Richter" :
+  alert("Welcome. Owner")
+}
 
   }
 
