@@ -70,6 +70,14 @@ router-link {
   text-decoration:none;
 
 }
+.Entire {
+
+  position:sticky;
+  top:0;
+  z-index:9999;
+  opacity:0.7;
+
+}
 .nav a {
 
     color:white !important;
@@ -549,6 +557,12 @@ justify-content: center;
     text-transform:uppercase;
 
    }
+   .proImg {
+
+    width:10rem;
+    height:10rem;
+
+   }
    .SortBtnPrice {
 
     color:white !important;
@@ -694,10 +708,9 @@ font-style: normal;
 @media only screen and (max-width: 720px) {
 
     .LandingPage {
-       width:50%;
+       width:100%;
         display:flex;
         justify-content: center;
-       background-color:orange !important;
 
     }
     .LandingPhoto {
@@ -717,10 +730,11 @@ font-style: normal;
         text-decoration: underline;
     
     }
-        
+    
 
     
     }  
+    
     .LandingPage :is(h1, h2, h3,h4) {
 
 right:120px;
@@ -757,6 +771,10 @@ right:120px;
         text-justify: inter-word;
         margin-top:0.9rem;
         word-wrap: break-word;
+    }
+    .carousel-caption  {
+
+
     }
       /* Mid Media Queries */
       .MidContent {
@@ -850,7 +868,7 @@ display:block;
 
       }
       #OwnerImg {
-        width:17rem;
+        width:15rem;
        height:17rem;
 
       }
@@ -872,7 +890,12 @@ display:block;
 
 
      }
-     
+     #QuestionBtn h2 {
+      margin-top:10px;
+      font-size:10px;
+
+
+     }
      #ProductBtn2 {
          margin-top:0.8rem;
          width:100%;

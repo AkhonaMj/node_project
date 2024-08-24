@@ -1,4 +1,5 @@
 <template>
+  <div class="Entire">
     <div class="Logo">
       <router-link to="/">
         <h1 class="TextDecoRemover">Valentine's</h1>
@@ -35,7 +36,7 @@
             </div>
           </nav>
         </div>
-
+      </div>
 </template>
 
 <script>

@@ -239,7 +239,7 @@
 
               <td>
                 <button
-                  class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#UserModel">
+                class="btn btn-success" data-bs-toggle="modal" data-bs-target="#UserModel">
                   Edit User
                 </button>
                 <button
@@ -263,8 +263,8 @@
 
               <td>
                 <button
-                  class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#updateModal">
-                  Edit User
+                class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Edit Product
                 </button>
                 <button
                   class="btn btn-danger btn-sm"
@@ -388,9 +388,11 @@ methods: {
  },
  updateProduct() {
         this.$store.dispatch('updateProduct', {id: this.payload.prodID, data: this.payload});
+        alert("Product has been updated.")
       },
       userUpdate() {
         this.$store.dispatch('updateUser', {id: this.payloadUser.userID, data: this.payloadUser});
+        alert("User has been updated.")
 
 
       },
@@ -398,6 +400,7 @@ methods: {
   try {
 
      this.$store.dispatch("deleteProduct", this.payload);
+
 location.reload()
 
   } catch (error) {
@@ -412,10 +415,13 @@ location.reload()
  },
  deleteProduct(prodID) {
         this.$store.dispatch('deleteProduct', prodID );
+        alert("Product has been deleted the page will now reload changes might take time to reflect.")
         location.reload()
       },
       deleteUser(userID) {
         this.$store.dispatch('deleteUser', userID );
+        alert("User has been deleted the page will now reload changes might take time to reflect.")
+
         location.reload()
       },
 
